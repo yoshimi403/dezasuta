@@ -1,0 +1,13 @@
+@charset "UTF-8";
+ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 30px
+;
+}
+@media screen and (max-width: 768px){
+    ul{
+        flex-direction: column;
+    }
+}
