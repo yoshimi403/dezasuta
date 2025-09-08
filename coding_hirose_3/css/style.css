@@ -1,0 +1,53 @@
+@charset "utf-8";
+.wrapper{
+    background-color: #eeeeee;
+}
+h1{
+    max-width: 960px;
+    text-align: center;
+    margin-bottom: -30px;
+    color: green;
+}
+ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 50%;
+    margin: 0 auto;
+
+
+}
+h2{
+    color: green;
+    border-left: 10px solid green;
+    padding: 0px 10px;
+    margin-inline-start:3px ;
+
+}
+p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start:3px ;
+    margin-inline-end:3px ;
+    unicode-bidi: isolate;
+}
+li{
+    width: 32%;
+    background-color: white;
+}
+.box img{
+    width: 100%;
+}
+.box{
+    max-width: 960px;
+    display: flex;
+    padding: 50px 0px;
+}
+
+@media screen and (max-width: 400px){
+    .box{
+        flex-direction: column;
+    }
+    
+}
