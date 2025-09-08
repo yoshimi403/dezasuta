@@ -46,8 +46,11 @@ li{
 }
 
 @media screen and (max-width: 400px){
-    .box{
+    #service ul{
         flex-direction: column;
     }
-    
+    li{
+        width: 200px;
+        margin-bottom: 10px;
+    }
 }
