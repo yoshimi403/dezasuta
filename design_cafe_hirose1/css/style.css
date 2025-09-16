@@ -1,0 +1,202 @@
+@charset "utf-8";
+
+.header_inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 7.6%;
+    padding-left: 2.9%;
+    position: absolute;
+    width: 100%;
+}
+
+.header_nav ul{
+    display: flex;
+    gap: 75px;
+}
+
+.header_nav a{
+    color: #fff;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
+      "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+      font-weight: bold;
+      font-size: 18px;
+}
+.logo{
+    width: 227px;
+}
+
+
+body{
+    background-color: blanchedalmond;
+}
+
+.happy{
+    text-align: center;
+    margin: 0 auto;
+    font-feature-settings: "palt";
+}
+.text{
+    font-size: 30px;
+    line-height: 0.25;
+    padding: 60px;
+}
+h2{
+    font-size: 82px;
+    line-height: 1.17;
+    padding-bottom: 60px;
+}
+.text_2{
+    font-size: 23px;
+    line-height: 1.65;
+    padding-bottom: 100px;
+}
+
+
+#about_us{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    gap: 80px;
+    padding: 0 10px;
+    padding-bottom: 105px;
+    max-width: 1000px;
+}
+
+.about_us_img img{
+    border-radius: 0px 0px 80px ;
+    width: 500px;
+}
+.about_title{
+    padding-top: 60px;
+    width: 272px;
+    padding: 0 10px;
+}
+.about_text{
+    font-size: 44px;
+    line-height: 1.38;
+    font-feature-settings: "palt";
+    padding-top: 55px;
+    padding: 0 10px;
+}
+.about_text_body{
+    font-size: 16px;
+    line-height: 1.62;
+    font-feature-settings: "palt";
+    padding-top: 35px;
+    padding: 0 10px;
+}
+
+
+.menu_title,.gallery_title,.event_title,.access_title{
+    text-align: center;
+    margin: 0 auto;
+}
+
+#menu {
+    max-width: 1000px;
+    margin: 0 auto;
+    align-items: center;
+    position: relative;
+    padding-bottom: 95px;
+}
+.menu_title{
+    width: 150px;
+}
+.menu_img img{
+    border-radius: 0px 80px 0px 0px;
+    height: 200px;
+    padding: 0 10px;
+}
+.menu_img {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+.drink_text,.food_text,.sweets_text{
+    color: red;
+    position: absolute;
+    font-size: 38px;
+    top: 260px;
+}
+.menu_body{
+    font-size: 17px;
+    line-height: 1.47;
+    font-feature-settings: "palt";
+    padding: 40px 0;
+}
+
+.gallery_title{
+    width: 245px;
+}
+.gallery_img{
+    display: flex;
+    padding-bottom: 70px;
+}
+
+
+#event{
+    padding: 0 10px;
+    padding-bottom: 75px;
+}
+.event_title{
+    width: 173px;
+}
+.box{
+    background-color: #fff;
+    border:#4f260b 3px solid;
+    width: 52%;
+    height: 200px;
+    margin: 0 auto;
+    padding: 35px 150px;
+}
+.box li{
+    font-size: 23px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: flex-start;
+}
+.box a{
+    font-size: 23px;
+    margin-left: 50px;
+    text-decoration: underline;
+}
+
+
+.access_title{
+    width: 213px;
+    padding-bottom: 40px;
+}
+iframe{
+filter: grayscale(100%) invert(92%) contrast(83%);
+width: 100%;
+}
+
+footer{
+    background-color: #fff;
+    padding: 100px 0; 
+    padding-left: 23%;
+    display: flex;
+    gap: 70px;
+}
+footer img{
+    width: 226px;
+    height: 50px;
+}
+footer p{
+    font-size: 20px;
+    line-height: 1.95;
+}
+
+.last{
+    background-color:#fff;
+    font-size: 16px;
+    text-align: center;
+}
+.toTOP{
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    width: 125px;
+}
+
