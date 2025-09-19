@@ -1,4 +1,7 @@
 @charset "utf-8";
+html{
+    scroll-behavior: smooth;
+}
 
 .header_inner{
     display: flex;
@@ -25,10 +28,19 @@
 .logo{
     width: 227px;
 }
-
+.wrapper{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
 
 body{
     background-color: blanchedalmond;
+}
+
+.sec_title img{
+    width: auto;
+    height: 77px;
 }
 
 .happy{
@@ -57,19 +69,22 @@ h2{
     display: flex;
     align-items: center;
     margin: 0 auto;
-    gap: 80px;
-    padding: 0 10px;
     padding-bottom: 105px;
     max-width: 1000px;
+}
+.about_us_img{
+    width: 50%;
+}
+.about_text_area{
+    width: 50%;
+    padding-left: 80px;
 }
 
 .about_us_img img{
     border-radius: 0px 0px 80px ;
-    width: 500px;
 }
 .about_title{
     padding-top: 60px;
-    width: 272px;
     padding: 0 10px;
 }
 .about_text{
@@ -100,13 +115,9 @@ h2{
     position: relative;
     padding-bottom: 95px;
 }
-.menu_title{
-    width: 150px;
-}
+
 .menu_img img{
     border-radius: 0px 80px 0px 0px;
-    height: 200px;
-    padding: 0 10px;
 }
 .menu_img {
     display: flex;
@@ -115,9 +126,8 @@ h2{
 }
 .drink_text,.food_text,.sweets_text{
     color: red;
-    position: absolute;
     font-size: 38px;
-    top: 260px;
+    margin-top: -20px;
 }
 .menu_body{
     font-size: 17px;
@@ -126,35 +136,36 @@ h2{
     padding: 40px 0;
 }
 
-.gallery_title{
-    width: 245px;
-}
+
 .gallery_img{
     display: flex;
     padding-bottom: 70px;
 }
+.gallery_img li{
+    width: 20%;
+}
 
 
 #event{
+    max-width: 1000px;
+    margin: 0 auto;
     padding: 0 10px;
     padding-bottom: 75px;
 }
-.event_title{
-    width: 173px;
-}
+
 .box{
     background-color: #fff;
     border:#4f260b 3px solid;
-    width: 52%;
     height: 200px;
     margin: 0 auto;
-    padding: 35px 150px;
+    padding: 35px 0;
 }
 .box li{
     font-size: 23px;
-    margin-bottom: 20px;
     display: flex;
     align-items: flex-start;
+    max-width: 665px;
+    margin: 0 auto 20px;
 }
 .box a{
     font-size: 23px;
@@ -164,9 +175,9 @@ h2{
 
 
 .access_title{
-    width: 213px;
     padding-bottom: 40px;
 }
+
 iframe{
 filter: grayscale(100%) invert(92%) contrast(83%);
 width: 100%;
@@ -175,9 +186,12 @@ width: 100%;
 footer{
     background-color: #fff;
     padding: 100px 0; 
-    padding-left: 23%;
+}
+.footer_inner{
+    max-width: 1000px;
+    margin: 0 auto;
     display: flex;
-    gap: 70px;
+    justify-content: space-between;
 }
 footer img{
     width: 226px;
