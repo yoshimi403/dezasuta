@@ -25,8 +25,26 @@
             </ul>
         </nav>
     </div>
+    <div class="hamburger">
+        <span></span>
+    </div>
+            <nav class="header_nav_sp">
+            <ul>
+            <li><a href="#about_us">ABOUT US</a></li>
+            <li><a href="#menu">MENU</a></li>
+            <li><a href="#gallery">GALLERY</a></li>
+            <li><a href="#event">EVENT</a></li>
+            <li><a href="#access">ACCESS</a></li>
+            </ul>
+        </nav>
+
     <div class="mainvisual">
-    <img src="./images/pc_first-100.jpg" alt="カフェ店内の様子">
+        <picture>
+            <source 
+            srcset="./images/sp_main_vs@2x-100.jpg"
+            media="(max-width:768px)"/>
+    <img src="./images/pc_first-100.jpg" alt="カフェ店内の様子"/>
+            </picture>
     </div>  
    </header> 
 
@@ -35,19 +53,38 @@
 <p class="text">
 Have a happy day From a cup of coffee.
 </p>
-<h2>
+<h2 class="title">
 ハッピーに溢れる1日を<br>1杯のコーヒーから。
 </h2>
 <p class="text_2">
+毎日を丁寧に大切に過ごしたい。<br class="br_sp">だからこそ一杯一杯丁寧にコーヒーを入れ<br class="br_pc"><br class="br_sp ">
+足を運んでくれるお客さんには落ち着く空間と<br class="br_sp">こだわりのコーヒーを提供したい。
+</p>
+
+<div >
+<p class="text_sp">
+Have a happy day From a cup of coffee.
+</p>
+<h2 class="title_sp">
+ハッピーに溢れる1日を<br>1杯のコーヒーから。
+</h2>
+<p class="text_2_sp">
 毎日を丁寧に大切に過ごしたい。だからこそ一杯一杯丁寧にコーヒーを入れ<br>
 足を運んでくれるお客さんには落ち着く空間とこだわりのコーヒーを提供したい。
 </p>
+</div>
+
     </div>
 
 
 <section id="about_us" class="wrapper">
 <div class="about_us_img">
+    <picture>
+        <source
+        srcset="./images/about_us@2x-100.jpg"
+        media="(max-width:768px)">
     <img src="./images/pc_about-100.jpg" alt="コーヒー">
+    </picture>
 </div>
 <div class="about_text_area">
 <h3 class="about_title sec_title">
@@ -55,6 +92,17 @@ Have a happy day From a cup of coffee.
 </h3>
 <p class="about_text">私たちが提供する<br>こだわりのコーヒー</p>
 <p class="about_text_body">
+サービスを提供する上での想いや心がけていることなど、メッ
+セージを文章で紹介します。サービスを提供する上での想い
+や心がけていることなど、メッセージを文章で紹介します。サー
+ビスを提供する上での想いや心がけていることなど、メッセー
+ジを文章で紹介します。サービスを提供する上での想いや心
+がけていることなど、メッセージを文章で紹介します。サービス
+を提供する上での想いや心がけていることなど、メッセージを
+文章で紹介します。</p>
+
+<p class="about_text_sp">私たちが提供する<br>こだわりのコーヒー</p>
+<p class="about_text_body_sp">
 サービスを提供する上での想いや心がけていることなど、メッ
 セージを文章で紹介します。サービスを提供する上での想い
 や心がけていることなど、メッセージを文章で紹介します。サー
@@ -148,5 +196,16 @@ MAIL：info@designcafe.tokyo</p>
     </a>
 </p>
 <div class="last">© 2021 DESIGN CAFE</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    $(function(){
+    $(".hamburger").click(function(){
+        $(".hamburger").toggleClass("open");
+        $(".header_nav_sp").fadeToggle();
+    });
+    })
+</script>
+
 </body>
 </html>
