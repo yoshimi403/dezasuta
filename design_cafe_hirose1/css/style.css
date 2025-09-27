@@ -265,6 +265,7 @@ body{
     #about_us{
         display: flex;
         flex-direction: column;
+        align-items: flex-start;
     }
     .about_text_area{
         display: contents;
@@ -280,6 +281,8 @@ body{
     }
     .about_title{
         order: 1;
+        margin: 0 auto;
+        margin-bottom: 22px;
     }
     .about_text_sp{
         order: 3;
@@ -296,6 +299,10 @@ body{
 .menu_title,.gallery_title,.event_title,.access_title{
     text-align: center;
     margin: 0 auto;
+}
+@media screen and (max-width: 768px){
+    .menu_title,.gallery_title,.event_title,.access_title
+    {margin-bottom: 22px;}
 }
 
 #menu {
@@ -384,20 +391,25 @@ body{
     .box li{
         font-size: 16px;
         flex-direction: column;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        max-width: 335px;
     }
     .box a{
         font-size: 16px;
         margin: 0;
+        width: 100%;
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 }
 
 
 .access_title{
     padding-bottom: 40px;
+}
+@media screen and (max-width: 768px){
+.access_title{
+    padding-bottom: 0;}
 }
 
 iframe{
@@ -441,4 +453,10 @@ footer p{
     right: 20px;
     width: 125px;
 }
-
+@media screen and (max-width: 768px){
+    .toTOP{
+        width: 100px;
+        bottom: 10px;
+        right: 10px;
+    }
+}
