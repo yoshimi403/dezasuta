@@ -1,0 +1,20 @@
+$green:#a2f1a2;
+
+
+h1{
+    color: red;
+    background-color: $green;
+    span{
+        color: blue;
+    }
+}
+a{
+    color: $green;
+    &:hover{
+        color: blue;
+    }
+    @media screen and (max-width: 768px){
+        color: red;}
+}
+
+@import"./_parts.scss";

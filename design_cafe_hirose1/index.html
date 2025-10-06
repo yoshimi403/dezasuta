@@ -5,7 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>デザインカフェ</title>
     <link rel="stylesheet" href="./css/reset.css">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+
+    <link href="css/lightbox.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+
 </head>
 <body>
    <header id="header">
@@ -40,10 +46,15 @@
 
     <div class="mainvisual">
         <picture>
-            <source 
-            srcset="./images/sp_main_vs@2x-100.jpg"
+            <source srcset="./images/sp_main_vs@2x-100.jpg"
             media="(max-width:768px)"/>
     <img src="./images/pc_first-100.jpg" alt="カフェ店内の様子"/>
+            </picture>
+            <picture>
+            <source srcset="./images/sp_main_vs_2@2x-100.jpg"
+            media="(max-width:768px)"/>
+    <img src="./images/slider_2.jpg" alt="カフェ店内の様子">
+
             </picture>
     </div>  
    </header> 
@@ -145,11 +156,12 @@ Have a happy day From a cup of coffee.
     <img src="./images/gallery@2x.png" alt="ギャラリー">
 </h3>
 <ul class="gallery_img">
-    <li><img src="./images/pc_gallary_05-100.jpg" alt=""></li>
-    <li><img src="./images/pc_gallary_04-100.jpg" alt=""></li>
-    <li><img src="./images/pc_gallary_03-100.jpg" alt=""></li>
-    <li><img src="./images/pc_gallary_02-100.jpg" alt=""></li>
-    <li><img src="./images/pc_gallary_01-100.jpg" alt=""></li>
+    <li><a href="./images/pc_gallary_05-100.jpg" data-lightbox="photo"><img src="./images/pc_gallary_05-100.jpg" alt=""></a></li>
+    <li><a href="./images/pc_gallary_04-100.jpg" data-lightbox="photo"><img src="./images/pc_gallary_04-100.jpg" alt=""></a></li>
+    <li><a href="./images/pc_gallary_03-100.jpg" data-lightbox="photo"><img src="./images/pc_gallary_03-100.jpg" alt=""></a></li>
+    <li><a href="./images/pc_gallary_02-100.jpg" data-lightbox="photo"><img src="./images/pc_gallary_02-100.jpg" alt=""></a></li>
+    <li><a href="./images/pc_gallary_01-100.jpg" data-lightbox="photo"><img src="./images/pc_gallary_01-100.jpg" alt=""></a></li>
+    <li><a href="./images/pc_gallary_01-100.jpg" data-lightbox="photo"><img src="./images/pc_gallary_01-100.jpg" alt=""></a></li>
 </ul>
 </section>
 
@@ -198,14 +210,42 @@ MAIL：info@designcafe.tokyo</p>
 <div class="last">© 2021 DESIGN CAFE</div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script src="js/lightbox-plus-jquery.min.js"></script>
+
 <script>
     $(function(){
     $(".hamburger").click(function(){
         $(".hamburger").toggleClass("open");
         $(".header_nav_sp").fadeToggle();
     });
+        $(".mainvisual").slick({
+            arrows:false,
+            autoplay:true,
+            autoplaySpeed:2000,
+            dots:true
+        });
+        $(".gallery_img").slick({
+            arrows:false,
+            autoplaySpeed:2000,
+            autoplay:true,
+            slidesToShow:5,
+            slidesToScroll:1,
+            responsive:[{
+            breakpoint:768,
+            settings:{
+                slidesToShow:1,
+                slidesToScroll:1,
+            }   
+            }]
+        });
+
+
     })
+
 </script>
+
 
 </body>
 </html>
