@@ -11,6 +11,7 @@ html{
     padding-left: 2.9%;
     position: absolute;
     width: 100%;
+    z-index: 9999;
 }
 
 .header_nav ul{
@@ -109,6 +110,7 @@ html{
     height: 100vh;
     width: 100%;
     background-color: #000000bb;
+    z-index: 9998;
 }
 .header_nav_sp ul{
     height: 100%;
@@ -473,4 +475,8 @@ footer p{
         bottom: 10px;
         right: 10px;
     }
+}
+
+.lb_data .lb_number{
+    display: none !important;
 }
