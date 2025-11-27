@@ -16,11 +16,13 @@ dl,
 div {
   margin: 0;
   padding: 0;
-  line-height: 1;
-  color: #4f260b;
-  font-family: "A1 Mincho", "游明朝", YuMincho, "Hiragino Mincho ProN W3",
-    "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
-    "ＭＳ 明朝", serif;
+  line-height: 1.9;
+  color: #fff;
+font-family: "BIZ UDGothic",
+  -apple-system, BlinkMacSystemFont,
+  "Yu Gothic", "游ゴシック体",
+  "Hiragino Sans", "Noto Sans JP",
+  sans-serif;
   font-feature-settings: "palt";
   box-sizing: border-box;
 }

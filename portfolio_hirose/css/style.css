@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+
 .header_inner{
  display: flex;
  justify-content: space-between;
@@ -30,6 +31,7 @@ width: 260px;
     position: relative;
     display: inline-block;
 }
+
 .animals{
     position: absolute;
     right: 0;
@@ -51,7 +53,7 @@ body{
 body::after {
   position: fixed;
   content: "";
-  background-image: url(../image/texture.png);
+  background-image: url(../image/背景.png);
   width: 100%;
   height: 100vh;
   top: 0;
@@ -65,12 +67,12 @@ main {
 main::after {
   position: fixed;
   content: "";
-  background-image: url(../image/texture.png);
+  background-image: url(../image/背景.png);
   width: 100%;
   height: 100vh;
   top: 0;
   left: 0;
-  opacity: 0.2;
+  opacity: 0.1;
   z-index: 0;
 }
 section,
@@ -94,6 +96,14 @@ header,
     text-align: center;
     margin: 0 auto;
     font-feature-settings: "palt";
+    position: relative;
+    z-index: 2;
+    background-color: transparent;
+    background-image: url("../image/star_pc.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center top;
+    padding-top: 100px;
 }
 .main_text p{
     font-size: 20px;
@@ -132,7 +142,7 @@ header,
     gap: 25px 115px;
     justify-content: center;
 }
-.works_img .white{
+.works_img .white {
     width: 18px;
     position: absolute;
     left: 0;
@@ -218,7 +228,7 @@ h3{
 }
 .skill_line{
     width: 100%;
-    height: 1px;
+    height: 2px;
     background-color: #fff;
     opacity: 0.4;
     margin: 30px 0;
@@ -242,7 +252,7 @@ h3{
 }
 .contact_text_area{
     margin-top: 20px;
-    line-height: 1.8;
+    line-height: 1.9;
 }
 .contact_button img{
     width: 386px;
@@ -309,7 +319,6 @@ gap: 100px;
 .works {
     max-width: 1440px;
     margin: 0 auto;
-    padding: 80px 20px;
     text-align: center;
 }
 .works h2 img{
@@ -350,7 +359,7 @@ gap: 100px;
     margin-top: 12px;
     line-height: 1.6;
     font-size: 18px;
-    color: #fff;:
+    color: #fff;
 }
 
 
@@ -381,12 +390,8 @@ gap: 100px;
 	border: solid 1px #333;
 	border-radius: 4px;
 }
-.c-form__input:focus-visible {
-	outline: green auto 1px;
-}
+
 .c-form__required {
-	color: #fff;
-	background-color: green;
 	border-radius: 4px;
 	padding: 5px 5px;
 	margin: 0 0 0 18px;
@@ -401,16 +406,18 @@ textarea.c-form__input {
 	font-size: 18px;
 	font-weight: bold;
 	color: #fff;
-	background-color: green;
-	border: solid 1px green;
 	border-radius: 4px;
 	padding: 5px 32px;
 	transition: 0.4s;
 	cursor: pointer;
 }
 .c-form__submit button:hover {
-	color: green;
 	background-color: transparent;
+}
+.yellowstar{
+    width: 18px;
+    position: absolute;
+
 }
 
 @media (min-width: 640px) {
@@ -423,4 +430,54 @@ textarea.c-form__input {
 	.c-form__input {
 		width: 55%;
 	}
+}
+
+
+
+.detail_mainimage img {
+  width: 70%;
+  max-width: 900px;
+  display: block;
+  margin: 0 auto 60px;
+}
+.detail_list{
+    width: 70%;
+    max-width: 900px;
+    margin: 0 auto 40px;
+    padding: o;
+    list-style: none;
+}
+.detail_list li{
+margin-bottom: 25px;
+}
+.detail_item{
+    width: 120px;
+    display: inline-block;
+}
+.detail_line{
+width: 100%;
+margin-top: 5px;
+display: block;
+}
+.detail{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; 
+}
+.detail_lp{
+    width: 588px;
+    margin: 0 auto 150px;
+}
+
+.font-mincho {
+  font-family: "Yu Mincho", "游明朝",
+    "Hiragino Mincho ProN", serif;
+}
+
+.font-marugo {
+  font-family: "FOT-筑紫B丸ゴシック Std" "M PLUS Rounded 1c",
+    "BIZ UDGothic", sans-serif;
+}
+.yellow{
+    color: #ffcf36;
 }
