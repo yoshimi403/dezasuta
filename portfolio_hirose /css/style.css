@@ -455,7 +455,7 @@ h3 {
   margin-bottom: 40px;
 }
 .contact_button img {
-  width: 30%;
+  width: 40%;
 }
 .send_button{
   margin-top: 50px;
@@ -511,8 +511,16 @@ h3 {
 .toTOP {
   position: fixed;
   bottom: 390px;
-  right: 110px;
-  width: 98px;
+  right: 50px;
+  width: 80px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.4s;
+  z-index: 9999;
+}
+.toTOP.show{
+  opacity: 1;
+  visibility: visible;
 }
 @media screen and (max-width: 768px){
     .toTOP{
