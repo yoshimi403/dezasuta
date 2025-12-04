@@ -1,5 +1,41 @@
 @charset "utf-8";
 
+#wrap::before,#wrap::after{
+  position: fixed;
+  z-index: 9999;
+  top: -15%;
+  display: block;
+  visibility: hidden;
+  width: 50%;
+  height: 130%;
+  content: '';
+}
+#wrap::before {
+  left: 0;
+  background-image: url("../image/curtain_left.png"); 
+  animation: curtain_left 4s ease forwards;
+}
+#wrap::after {
+  right: 0;
+  background-image: url("../image/curtain_right.png"); 
+  animation: curtain_right 4s ease forwards;
+}
+@keyframes curtain_left{
+  0%{visibility: visible;}
+  20%{transform: rotate(0deg) translateX(0%); }
+  60%{transform: rotate(6deg) translateX(-50%);}
+  80%{opacity: 1;}
+  100%{transform: rotate(0deg) translateX(-100%); opacity:0; visibility: hidden;}
+}
+
+@keyframes curtain_right{
+  0%{ visibility: visible;}
+  20%{transform: rotate(0deg) translateX(0%); }
+  60%{transform: rotate(-6deg) translateX(50%);}
+  80%{opacity: 1;}
+  100%{transform: rotate(0deg) translateX(100%); opacity:0; visibility: hidden;}
+}
+
 .header_inner {
   display: flex;
   justify-content: space-between;
