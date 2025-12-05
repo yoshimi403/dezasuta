@@ -251,13 +251,15 @@ div#wrap {
 }
 .mainvisual p {
   position: absolute;
-  top: 30%;
-  left: 26%;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: #ffcf36;
   font-size: 37px;
   line-height: 2.3;
   text-align: center;
   z-index: 2;
+  width: 80%; 
 }
 .sp {
   display: none;
@@ -267,20 +269,23 @@ div#wrap {
     display: none;
   }
   .sp {
-    display: block;
-    position: absolute;
-    top: 30%;
-    left: 26%;
-    color: #ffcf36;
-    font-size: 14px;
-    line-height: 2.8;
-    text-align: center;
-    z-index: 2;
+  display: block;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffcf36;
+  font-size: 14px;
+  line-height: 2.8;
+  text-align: center;
+  z-index: 2;
+  width: 80%;
   }
   .mountain {
     bottom: 0;
   }
 }
+
 @media screen and (max-width: 550px) {
   .animals {
     bottom: 34px;
