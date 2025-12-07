@@ -678,6 +678,7 @@ h3 {
 .works_category span {
   font-size: 15px;
   padding: 10px;
+    font-family: "fot-tsukubrdgothic-std", "BIZ UDGothic", sans-serif;
 }
 .works_item_box {
   display: grid;
@@ -702,6 +703,7 @@ h3 {
   line-height: 1.6;
   font-size: 18px;
   color: #ffcf36;
+    font-family: "fot-tsukubrdgothic-std", "BIZ UDGothic", sans-serif;
 }
 .works_item_sp p {
   color: #ffcf36;
