@@ -18,13 +18,17 @@
         <nav class="header_nav">
           <ul class="nav_menu">
             <li class="WORKS">
-              <a href="#works"><img src="./image/WORKS.png" alt="WORKS" /></a>
+              <a href="./index.html#works"
+                ><img src="./image/WORKS.png" alt="WORKS"
+              /></a>
             </li>
             <li class="ABOUT">
-              <a href="#about"><img src="./image/ABOUT.png" alt="ABOUT" /></a>
+              <a href="./index.html#about"
+                ><img src="./image/ABOUT.png" alt="ABOUT"
+              /></a>
             </li>
             <li class="CONTACT">
-              <a href="#contact"
+              <a href="./index.html#contact"
                 ><img src="./image/CONTACT.png" alt="CONTACT"
               /></a>
             </li>
@@ -38,7 +42,7 @@
             <a href="index.html">HOME</a>
           </li>
           <li class="WORKS">
-            <a href="works.html">WORKS</a>
+            <a href="./index.html#works">WORKS</a>
           </li>
           <li class="ABOUT">
             <a href="index.html#about">ABOUT</a>
@@ -66,8 +70,10 @@
 
         <form
           action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSf8YZCNpIStHnIy2zbJTeFXcl7OF99yyTQRtBwd9G6umcDxRA/formResponse"
+          method="POST"
+          target="hidden_iframe"
+          onsubmit="submitted=true;"
           class="c-form"
-          method="post"
         >
           <div class="c-form__item">
             <label class="c-form__label" for="field-name"
@@ -87,10 +93,9 @@
             <input
               name="entry.1065046570"
               class="c-form__input"
-              id="field-name"
+              id="field-company"
               placeholder="株式会社 山田"
               type="text"
-              required="required"
             />
           </div>
           <div class="c-form__item">
@@ -120,10 +125,21 @@
             ></textarea>
           </div>
 
-          <div class="send_button">
-            <a href="send.html"><img src="./image/send-botton.png" alt="" /></a>
+          <div class="c-form__submit send_button">
+            <button type="submit">
+              <img src="./image/send-botton.png" alt="" />
+            </button>
           </div>
         </form>
+        <script type="text/javascript">
+          let submitted = false;
+        </script>
+        <iframe
+          name="hidden_iframe"
+          id="hidden_iframe"
+          style="display: none"
+          onload="if(submitted){window.location='./send.html';}"
+        ></iframe>
       </section>
 
       <div class="last">&copy; 2025 YOSHIMI PORTOFOLIO SITE</div>
@@ -131,22 +147,5 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="./js/script.js"></script>
-<form
-    action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSe00eJN0CWayVTtmGW0ONrc6MT8bA5no3F9iHgbGwaOm18KRw/formResponse"
-    method="POST"
-    target="hidden_iframe"
-    onsubmit="submitted=true;"
-    class="c-form"
->
-
-<script type="text/javascript">
-    let submitted = false;
-</script>
-<iframe
-    name="hidden_iframe"
-    id="hidden_iframe"
-    style="display: none"
-    onload="if(submitted){window.location='THANKSページのURL';}"
-></iframe>
   </body>
 </html>

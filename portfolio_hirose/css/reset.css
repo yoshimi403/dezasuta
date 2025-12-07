@@ -18,11 +18,9 @@ div {
   padding: 0;
   line-height: 1.9;
   color: #fff;
-font-family: "BIZ UDGothic",
-  -apple-system, BlinkMacSystemFont,
-  "Yu Gothic", "游ゴシック体",
-  "Hiragino Sans", "Noto Sans JP",
-  sans-serif;
+  font-family: "fot-tsukubrdgothic-std", "BIZ UDGothic", -apple-system,
+    BlinkMacSystemFont, "Yu Gothic", "游ゴシック体", "Hiragino Sans",
+    "Noto Sans JP", sans-serif;
   font-feature-settings: "palt";
   box-sizing: border-box;
 }
@@ -44,4 +42,13 @@ img {
   width: 100%;
   vertical-align: bottom;
   border: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  appearance: none;
 }
