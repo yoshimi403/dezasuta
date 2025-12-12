@@ -441,10 +441,11 @@ section,
   display: block;
 }
 .viewmore_button img {
-  width: 25%;
+  width: 100%;
   display: flex;
   margin: 0 auto;
   margin-top: 60px;
+  max-width: 220px;
 }
 @media screen and (max-width: 786px) {
   .works_wrapper {
@@ -580,7 +581,9 @@ h3 {
   margin-bottom: 40px;
 }
 .contact_button img {
-  width: 35%;
+  width: 100%;
+  max-width: 320px;
+  height: auto;
 }
 .send_button {
   margin-top: 50px;
