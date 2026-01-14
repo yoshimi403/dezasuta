@@ -272,7 +272,7 @@ div#wrap {
   .sp {
   display: block;
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #ffcf36;
@@ -724,7 +724,8 @@ h3 {
 }
 
 .send_button img {
-  width: 40%;
+  width: 100%;
+  max-width: 320px;
   margin-bottom: 100px;
 }
 
@@ -893,4 +894,11 @@ text-align: center;}
 .thanks_text{
   font-size: 21px;
   color: #ffcf36;
+}
+
+.contact-page p,
+.contact-page label,
+.contact-page input,
+.contact-page textarea {
+  font-family: "BIZ UDGothic", sans-serif;
 }
